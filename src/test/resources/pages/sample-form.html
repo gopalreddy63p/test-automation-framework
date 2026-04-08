@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Selenium Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            line-height: 1.5;
+        }
+
+        form {
+            max-width: 420px;
+            padding: 1.5rem;
+            border: 1px solid #dddddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        .field {
+            margin-bottom: 1rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+        }
+
+        input,
+        select,
+        button {
+            width: 100%;
+            padding: 0.6rem;
+            box-sizing: border-box;
+        }
+
+        #result {
+            margin-top: 1rem;
+            font-weight: 700;
+            color: #0b6b2f;
+        }
+    </style>
+    <script>
+        function showMessage() {
+            const name = document.getElementById('name').value || 'Guest';
+            document.getElementById('result').textContent = `Thanks, ${name}!`;
+        }
+    </script>
+</head>
+<body>
+<h1 id="mainHeading">Sample Selenium Test Page</h1>
+<p>This local page is used by the sample Selenium + TestNG tests.</p>
+
+<form>
+    <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Enter your name">
+    </div>
+
+    <div class="field">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+    </div>
+
+    <div class="field">
+        <label>
+            <input id="subscribe" name="subscribe" type="checkbox" style="width: auto; margin-right: 0.5rem;">
+            Subscribe to updates
+        </label>
+    </div>
+
+    <button id="submitButton" type="button" onclick="showMessage()">Submit</button>
+    <div id="result"></div>
+</form>
+
+<h2>Features</h2>
+<ul id="featureList">
+    <li>Local HTML page for predictable UI testing</li>
+    <li>Simple input elements for Selenium interaction</li>
+    <li>Confirmation message rendered with JavaScript</li>
+</ul>
+</body>
+</html>
+
