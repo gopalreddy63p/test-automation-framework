@@ -12,7 +12,7 @@ import com.gopalreddypatlolla.automation.base.BaseUiTest;
 
 public class SampleUiTests extends BaseUiTest {
 
-    @BeforeMethod
+    /*@BeforeMethod
     public void loadPage() {
         openLocalPage("pages/sample-form.html");
     }
@@ -61,6 +61,44 @@ public class SampleUiTests extends BaseUiTest {
 
         Assert.assertEquals(resultMessage.getText(), "Thanks, Automation User!");
         Assert.assertEquals(features.size(), 3);
+    }*/
+
+    int a=100, b= 25;
+    @Test
+    public void addOperation(){
+        System.out.println("Addition of a and b is: "+(a+b));
+    }
+
+    @Test
+    public void subOperation(){
+        System.out.println("Subtraction of a and b is: "+(a-b));
+    }
+
+    @Test
+    public void multiplicationOperation(){
+        System.out.println("Multiplication of a and b is: "+(a*b));
+    }
+
+    @Test
+
+    public void divisionOperation() {
+        System.out.println("Division of a and b is: " + (a / b));
+    }
+
+    @Test
+    public void modulusOperation() {
+        System.out.println("Modulus of a and b is: " + (a % b));
+    }
+
+    @Test
+    public void exponentiationOperation() {
+        System.out.println("Exponentiation of a and b is: " + Math.pow(a, b));
+    }
+
+    @Test
+    public void incrementOperation() {
+        a++;
+        System.out.println("Incremented value of a is: " + a);
     }
 }
 

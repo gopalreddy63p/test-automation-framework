@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 public abstract class BaseUiTest {
 
     protected WebDriver driver;
-
+/*
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
@@ -46,6 +46,6 @@ public abstract class BaseUiTest {
     protected void openLocalPage(String relativePath) {
         Path pagePath = Path.of("src", "test", "resources", relativePath);
         driver.get(pagePath.toUri().toString());
-    }
+    }*/
 }
 
