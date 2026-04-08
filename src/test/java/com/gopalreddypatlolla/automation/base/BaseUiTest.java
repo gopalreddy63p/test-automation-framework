@@ -15,6 +15,7 @@ public abstract class BaseUiTest {
 
     protected WebDriver driver;
 /*
+    //added comment
     @BeforeMethod
     public void setUp() {
         ChromeOptions options = new ChromeOptions();
