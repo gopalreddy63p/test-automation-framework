@@ -12,7 +12,7 @@ import com.gopalreddypatlolla.automation.base.BaseUiTest;
 
 public class SampleUiTests extends BaseUiTest {
 
-    /*@BeforeMethod
+    @BeforeMethod
     public void loadPage() {
         openLocalPage("pages/sample-form.html");
     }
@@ -61,7 +61,7 @@ public class SampleUiTests extends BaseUiTest {
 
         Assert.assertEquals(resultMessage.getText(), "Thanks, Automation User!");
         Assert.assertEquals(features.size(), 3);
-    }*/
+    }
 
     int a=100, b= 25;
     @Test

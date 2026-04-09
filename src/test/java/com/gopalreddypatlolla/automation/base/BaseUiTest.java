@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 public abstract class BaseUiTest {
 
     protected WebDriver driver;
-/*
+
     //added comment
     @BeforeMethod
     public void setUp() {
@@ -47,6 +47,6 @@ public abstract class BaseUiTest {
     protected void openLocalPage(String relativePath) {
         Path pagePath = Path.of("src", "test", "resources", relativePath);
         driver.get(pagePath.toUri().toString());
-    }*/
+    }
 }
 
